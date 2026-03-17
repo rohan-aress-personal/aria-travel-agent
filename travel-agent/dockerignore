@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets — NEVER bake into image
+# Pass via Azure Container Apps secrets instead
+.env
+*.env
+
+# Dev & editor files
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Docs & build artifacts
+*.md
+*.txt
+!requirements.txt
+*.zip
+dist/
+build/

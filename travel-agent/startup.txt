@@ -1,0 +1,7 @@
+# Azure App Service deployment configuration
+# Deploy to Azure App Service FREE tier (F1) using this file
+
+# startup command for Azure App Service:
+# python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0
+
+python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0
