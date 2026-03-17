@@ -1,2 +1,2 @@
-# aria-trave-agent
+# aria-travel-agent
 Travel agent that will mail you the travel plan
