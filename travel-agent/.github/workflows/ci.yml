@@ -49,8 +49,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .       
-          file: ./Dockerfile  
+          context: ./travel-agent
+          file: ./travel-agent/Dockerfile 
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
             ${{ env.DOCKER_IMAGE }}:latest
