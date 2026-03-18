@@ -50,7 +50,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./travel-agent       
-          file: ./travel/agent/Dockerfile  
+          file: ./travel-agent/Dockerfile  
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
             ${{ env.DOCKER_IMAGE }}:latest
