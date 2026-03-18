@@ -49,11 +49,11 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./travel-agent
-          file: ./travel-agent/Dockerfile 
-          push: ${{ github.ref == 'refs/heads/main' }}  # Push only on main; PRs just build
+          context: ./travel-agent       
+          file: ./travel-agent/Dockerfile  
+          push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
             ${{ env.DOCKER_IMAGE }}:latest
             ${{ env.DOCKER_IMAGE }}:${{ github.sha }}
-          cache-from: type=gha   # GitHub Actions cache — speeds up rebuilds
+          cache-from: type=gha
           cache-to: type=gha,mode=max
